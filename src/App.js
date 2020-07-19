@@ -12,12 +12,12 @@ class App extends Component {
         completed: false
       },
       {
-        id: 1,
+        id: 2,
         title: 'Dinner with wife',
         completed: false
       },
       {
-        id: 1,
+        id: 3,
         title: 'Meeting with boss',
         completed: false
       },
@@ -26,12 +26,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <Todos />
+      <Todos todos={this.state.todos}/>
       </div>
     )
   }
 }
-
-
 
 export default App;
